@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+:root{
+    --cor-branco-azulado:#e0e8ff;
+    --cor-azul:#3829e0;
+    --cor-branco:#f5f7ff;
+    --cor-zinca:#7280a7;
+    --cor-azul-fort:#1f2f56;
+}
+
+body{
+    background: var(--cor-branco-azulado);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+main{
+    background: var(--cor-branco);
+    max-width: 400px;
+    border-radius: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+
+.image_caixa{
+    background-image: url(./images/illustration-hero.svg);
+    height: 200px;
+    border-radius: 1em 1em 0 0;
+}
+
+.caixa{
+    display: flex;
+    flex-direction: column;
+}
+ h1{
+    text-align: center;
+    margin: 0.5em 0;
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.texto-caixa{
+    color: var(--cor-zinca);
+    padding: 0 4em;
+    text-align: center;
+}
+
+.caixa-azul{
+   background: #dce2f474;
+   margin: 1em 3em;
+   border-radius: 1em;
+   display: flex;
+   padding: 0.5em;
+   justify-content: space-around
+}
+
+.mus-imag{
+    width: 50px;
+    margin-right: 0.6em;
+}
+
+.texto-um{
+    font-weight: 900;
+}
+
+.texto-dois{
+    color: var(--cor-zinca);
+}
+
+.link{
+    color: var(--cor-azul);
+    margin-top: 10px;
+}
+
+.link:hover{
+    color: #7333f399;
+}
+
+.botao{
+    border: none;
+    padding: 1em;
+    margin: 0.2em 4em;
+    border-radius: 1em;
+    color: var(--cor-branco);
+    background: var(--cor-azul);
+}
+
+.botao:hover{
+    background: #7133ed44;
+}
+
+.dois:hover{
+    background: var(--cor-branco);
+    color: black;
+}
+
+.dois{
+    background: var(--cor-branco);
+    color: var(--cor-zinca);
+}
+
+.botao,.link:hover{
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width: 320px){
+    body{
+        background: var(--cor-branco-azulado);
+    }
+    main{
+        width: 300px;
+        text-align: center;
+    }
+     .image_caixa{
+        background-position: center;
+    } 
+    .caixa-azul{
+        margin: 1em 1em;
+    }
+    .botao{
+        margin: 1em 2em;
+    }
+
+}
